@@ -1,7 +1,9 @@
 package ru.gozhan.mosmetronavigation;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -50,11 +52,11 @@ public class MoscowMetro {
         STATIONS.put(12, new MetroStation("1", "Парк культуры"));
         STATIONS.put(13, new MetroStation("1", "Фрунзенская"));
         STATIONS.put(14, new MetroStation("1", "Спортивная"));
-        STATIONS.put(15, new MetroStation("1", "Воробьёвы горы"));
+        STATIONS.put(15, new MetroStation("1", "Воробьевы горы"));
         STATIONS.put(16, new MetroStation("1", "Университет"));
         STATIONS.put(17, new MetroStation("1", "Проспект Вернадского"));
         STATIONS.put(18, new MetroStation("1", "Юго-Западная"));
-        STATIONS.put(19, new MetroStation("1", "Тропарёво"));
+        STATIONS.put(19, new MetroStation("1", "Тропарево"));
         STATIONS.put(20, new MetroStation("1", "Румянцево"));
         STATIONS.put(21, new MetroStation("1", "Саларьево"));
         STATIONS.put(22, new MetroStation("1", "Филатов Луг"));
@@ -91,7 +93,7 @@ public class MoscowMetro {
         STATIONS.put(51, new MetroStation("3", "Первомайская"));
         STATIONS.put(52, new MetroStation("3", "Измайловская"));
         STATIONS.put(53, new MetroStation("3", "Партизанская"));
-        STATIONS.put(54, new MetroStation("3", "Семёновская"));
+        STATIONS.put(54, new MetroStation("3", "Семеновская"));
         STATIONS.put(55, new MetroStation("3", "Электрозаводская"));
         STATIONS.put(56, new MetroStation("3", "Бауманская"));
         STATIONS.put(57, new MetroStation("3", "Курская"));
@@ -102,7 +104,7 @@ public class MoscowMetro {
         STATIONS.put(62, new MetroStation("3", "Парк Победы"));
         STATIONS.put(63, new MetroStation("3", "Славянский бульвар"));
         STATIONS.put(64, new MetroStation("3", "Кунцевская"));
-        STATIONS.put(65, new MetroStation("3", "Молодёжная"));
+        STATIONS.put(65, new MetroStation("3", "Молодежная"));
         STATIONS.put(66, new MetroStation("3", "Крылатское"));
         STATIONS.put(67, new MetroStation("3", "Строгино"));
         STATIONS.put(68, new MetroStation("3", "Мякинино"));
@@ -112,7 +114,7 @@ public class MoscowMetro {
 
         STATIONS.put(72, new MetroStation("4", "Кунцевская"));
         STATIONS.put(73, new MetroStation("4", "Пионерская"));
-        STATIONS.put(74, new MetroStation("4", "Филёвский парк"));
+        STATIONS.put(74, new MetroStation("4", "Филевский парк"));
         STATIONS.put(75, new MetroStation("4", "Багратионовская"));
         STATIONS.put(76, new MetroStation("4", "Фили"));
         STATIONS.put(77, new MetroStation("4", "Кутузовская"));
@@ -155,11 +157,11 @@ public class MoscowMetro {
         STATIONS.put(112, new MetroStation("6", "Ленинский проспект"));
         STATIONS.put(113, new MetroStation("6", "Академическая"));
         STATIONS.put(114, new MetroStation("6", "Профсоюзная"));
-        STATIONS.put(115, new MetroStation("6", "Новые Черёмушки"));
+        STATIONS.put(115, new MetroStation("6", "Новые Черемушки"));
         STATIONS.put(116, new MetroStation("6", "Калужская"));
         STATIONS.put(117, new MetroStation("6", "Беляево"));
         STATIONS.put(118, new MetroStation("6", "Коньково"));
-        STATIONS.put(119, new MetroStation("6", "Тёплый Стан"));
+        STATIONS.put(119, new MetroStation("6", "Теплый Стан"));
         STATIONS.put(120, new MetroStation("6", "Ясенево"));
         STATIONS.put(121, new MetroStation("6", "Новоясеневская"));
 
@@ -201,7 +203,7 @@ public class MoscowMetro {
         STATIONS.put(155, new MetroStation("8А", "Ломоносовский проспект"));
         STATIONS.put(156, new MetroStation("8А", "Раменки"));
         STATIONS.put(157, new MetroStation("8А", "Мичуринский проспект"));
-        STATIONS.put(158, new MetroStation("8А", "Озёрная"));
+        STATIONS.put(158, new MetroStation("8А", "Озерная"));
         STATIONS.put(159, new MetroStation("8А", "Говорово"));
         STATIONS.put(160, new MetroStation("8А", "Солнцево"));
         STATIONS.put(161, new MetroStation("8А", "Боровское шоссе"));
@@ -218,7 +220,7 @@ public class MoscowMetro {
         STATIONS.put(176, new MetroStation("9", "Петровско-Разумовская"));
         STATIONS.put(177, new MetroStation("9", "Тимирязевская"));
         STATIONS.put(178, new MetroStation("9", "Дмитровская"));
-        STATIONS.put(179, new MetroStation("9", "Савёловская"));
+        STATIONS.put(179, new MetroStation("9", "Савеловская"));
         STATIONS.put(180, new MetroStation("9", "Менделеевская"));
         STATIONS.put(181, new MetroStation("9", "Цветной бульвар"));
         STATIONS.put(182, new MetroStation("9", "Чеховская"));
@@ -329,7 +331,7 @@ public class MoscowMetro {
         STATIONS.put(281, new MetroStation("14", "Кутузовская"));
         STATIONS.put(282, new MetroStation("14", "Деловой центр"));
         STATIONS.put(283, new MetroStation("14", "Шелепиха"));
-        STATIONS.put(284, new MetroStation("14", "Хорошёво"));
+        STATIONS.put(284, new MetroStation("14", "Хорошево"));
         STATIONS.put(285, new MetroStation("14", "Зорге"));
         STATIONS.put(286, new MetroStation("14", "Панфиловская"));
         STATIONS.put(287, new MetroStation("14", "Стрешнево"));
@@ -358,14 +360,14 @@ public class MoscowMetro {
         STATIONS.put(308, new MetroStation("D1", "Дегунино"));
         STATIONS.put(309, new MetroStation("D1", "Окружная"));
         STATIONS.put(310, new MetroStation("D1", "Тимирязевская"));
-        STATIONS.put(311, new MetroStation("D1", "Савёловская"));
+        STATIONS.put(311, new MetroStation("D1", "Савеловская"));
         STATIONS.put(312, new MetroStation("D1", "Белорусская"));
         STATIONS.put(313, new MetroStation("D1", "Беговая"));
         STATIONS.put(314, new MetroStation("D1", "Тестовская"));
         STATIONS.put(315, new MetroStation("D1", "Фили"));
         STATIONS.put(316, new MetroStation("D1", "Славянский бульвар"));
         STATIONS.put(317, new MetroStation("D1", "Кунцевская"));
-        STATIONS.put(318, new MetroStation("D1", "Рабочий Посёлок"));
+        STATIONS.put(318, new MetroStation("D1", "Рабочий Поселок"));
         STATIONS.put(319, new MetroStation("D1", "Сетунь"));
         STATIONS.put(320, new MetroStation("D1", "Немчиновка"));
         STATIONS.put(321, new MetroStation("D1", "Сколково"));
@@ -420,7 +422,7 @@ public class MoscowMetro {
         STATIONS.put(368, new MetroStation("D3", "Химки"));
         STATIONS.put(369, new MetroStation("D3", "Левобережная"));
         STATIONS.put(370, new MetroStation("D3", "Ховрино"));
-        STATIONS.put(371, new MetroStation("D3", "Грачёвская"));
+        STATIONS.put(371, new MetroStation("D3", "Грачевская"));
         STATIONS.put(372, new MetroStation("D3", "Моссельмаш"));
         STATIONS.put(373, new MetroStation("D3", "Лихоборы"));
         STATIONS.put(374, new MetroStation("D3", "Петровско-Разумовская"));
@@ -452,7 +454,7 @@ public class MoscowMetro {
 
         STATIONS.put(400, new MetroStation("D4", "Апрелевка"));
         STATIONS.put(401, new MetroStation("D4", "Победа"));
-        STATIONS.put(402, new MetroStation("D4", "Крёкшино"));
+        STATIONS.put(402, new MetroStation("D4", "Крекшино"));
         STATIONS.put(403, new MetroStation("D4", "Санино"));
         STATIONS.put(404, new MetroStation("D4", "Кокошкино"));
         STATIONS.put(405, new MetroStation("D4", "Толстопальцево"));
@@ -470,7 +472,7 @@ public class MoscowMetro {
         STATIONS.put(417, new MetroStation("D4", "Кутузовская"));
         STATIONS.put(418, new MetroStation("D4", "Тестовская"));
         STATIONS.put(419, new MetroStation("D4", "Белорусская"));
-        STATIONS.put(420, new MetroStation("D4", "Савёловская"));
+        STATIONS.put(420, new MetroStation("D4", "Савеловская"));
         STATIONS.put(421, new MetroStation("D4", "Марьина Роща"));
         STATIONS.put(422, new MetroStation("D4", "Площадь трех вокзалов"));
         STATIONS.put(423, new MetroStation("D4", "Курская"));
@@ -817,6 +819,54 @@ public class MoscowMetro {
         GRAPH.addConnection(358, 359);
         GRAPH.addConnection(359, 360);
         GRAPH.addConnection(360, 361);
+    }
+
+    public List<Integer> findPath(int startStationId,
+                                  int endStationId,
+                                  PathSearch pathSearch) {
+
+        return pathSearch.search(startStationId, endStationId);
+    }
+
+    public Integer getStationIdByLineAndStationName(String line, String stationName) {
+        for (Map.Entry<Integer, MetroStation> entry : STATIONS.entrySet()) {
+            MetroStation station = entry.getValue();
+            if (station.getLine().equals(line) && station.getName().equals(stationName)) {
+                return entry.getKey(); // Возвращаем ID станции
+            }
+        }
+        return null; // Если станция не найдена
+    }
+
+//    public List<String> mapPathIntsToPathNames(List<Integer> path) {
+//        List<String> pathWithNames = new ArrayList<>();
+//        for (Integer stationId : path) {
+//            pathWithNames.add(STATIONS.get(stationId).getName());
+//        }
+//        return pathWithNames;
+//    }
+
+    public String createStationsPathStringWithTransfers(List<Integer> stationIds) {
+        if (stationIds == null || stationIds.isEmpty()) {
+            return "Путь не найден.";
+        }
+
+        StringBuilder pathWithTransfers = new StringBuilder("Маршрут:\n");
+        String currentLine = STATIONS.get(stationIds.get(0)).getLine();
+
+        for (int i = 0; i < stationIds.size(); i++) {
+            MetroStation station = STATIONS.get(stationIds.get(i));
+            String stationLine = station.getLine();
+
+            if (!stationLine.equals(currentLine)) {
+                pathWithTransfers.append("Пересадка на линию ").append(stationLine).append("\n");
+                currentLine = stationLine;
+            }
+
+            pathWithTransfers.append(" - ").append(station.getName()).append("\n");
+        }
+
+        return pathWithTransfers.toString();
     }
 
 }
