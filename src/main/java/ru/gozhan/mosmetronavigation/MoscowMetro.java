@@ -28,6 +28,11 @@ public class MoscowMetro {
         LINES.add(new MetroLine("13", "Московский монорельс"));
         LINES.add(new MetroLine("14", "Московское центральное кольцо"));
         LINES.add(new MetroLine("15", "Большая кольцевая линия"));
+        LINES.add(new MetroLine("D1", "МЦД-1"));
+        LINES.add(new MetroLine("D2", "МЦД-2"));
+        LINES.add(new MetroLine("D3", "МЦД-3"));
+        LINES.add(new MetroLine("D4", "МЦД-4"));
+        LINES.add(new MetroLine("D4A", "МЦД-4А"));
 
         STATIONS = new HashMap<>();
         STATIONS.put(0, new MetroStation("1", "Бульвар Рокоссовского"));
