@@ -489,6 +489,260 @@ public class MoscowMetro {
         STATIONS.put(434, new MetroStation("D4", "Железнодорожная"));
 
         GRAPH = new MetroGraph();
+        GRAPH.addConnection(210, 211);
+        GRAPH.addConnection(229, 55);
+        GRAPH.addConnection(231, 230);
+        GRAPH.addConnection(230, 229);
+
+        GRAPH.addConnection(0, 266);
+        GRAPH.addConnection(1, 267);
+        GRAPH.addConnection(3, 228);
+        GRAPH.addConnection(5, 93);
+        GRAPH.addConnection(5, 340);
+        GRAPH.addConnection(5, 422);
+        GRAPH.addConnection(7, 107);
+        GRAPH.addConnection(7, 209);
+        GRAPH.addConnection(8, 132);
+        GRAPH.addConnection(9, 37);
+        GRAPH.addConnection(9, 58);
+        GRAPH.addConnection(10, 82);
+        GRAPH.addConnection(10, 59);
+        GRAPH.addConnection(10, 183);
+        GRAPH.addConnection(12, 87);
+        GRAPH.addConnection(14, 280);
+        GRAPH.addConnection(17, 243);
+        GRAPH.addConnection(0, 1);
+        GRAPH.addConnection(1, 0);
+        GRAPH.addConnection(1, 2);
+        GRAPH.addConnection(2, 1);
+        GRAPH.addConnection(2, 3);
+        GRAPH.addConnection(3, 2);
+        GRAPH.addConnection(3, 4);
+        GRAPH.addConnection(4, 3);
+        GRAPH.addConnection(4, 5);
+        GRAPH.addConnection(5, 4);
+        GRAPH.addConnection(5, 6);
+        GRAPH.addConnection(6, 5);
+        GRAPH.addConnection(6, 7);
+        GRAPH.addConnection(7, 6);
+        GRAPH.addConnection(7, 8);
+        GRAPH.addConnection(8, 7);
+        GRAPH.addConnection(8, 9);
+        GRAPH.addConnection(9, 8);
+        GRAPH.addConnection(9, 10);
+        GRAPH.addConnection(10, 9);
+        GRAPH.addConnection(10, 11);
+        GRAPH.addConnection(11, 10);
+        GRAPH.addConnection(11, 12);
+        GRAPH.addConnection(12, 11);
+        GRAPH.addConnection(12, 13);
+        GRAPH.addConnection(13, 12);
+        GRAPH.addConnection(13, 14);
+        GRAPH.addConnection(14, 13);
+        GRAPH.addConnection(14, 15);
+        GRAPH.addConnection(15, 14);
+        GRAPH.addConnection(15, 16);
+        GRAPH.addConnection(16, 15);
+        GRAPH.addConnection(16, 17);
+        GRAPH.addConnection(17, 16);
+        GRAPH.addConnection(17, 18);
+        GRAPH.addConnection(18, 17);
+        GRAPH.addConnection(18, 19);
+        GRAPH.addConnection(19, 18);
+        GRAPH.addConnection(19, 20);
+        GRAPH.addConnection(20, 19);
+        GRAPH.addConnection(20, 21);
+        GRAPH.addConnection(21, 20);
+        GRAPH.addConnection(21, 22);
+        GRAPH.addConnection(22, 21);
+        GRAPH.addConnection(22, 23);
+        GRAPH.addConnection(23, 22);
+        GRAPH.addConnection(23, 24);
+        GRAPH.addConnection(24, 23);
+        GRAPH.addConnection(24, 25);
+        GRAPH.addConnection(25, 24);
+        //Connections Line 2
+        GRAPH.addConnection(26, 370);
+        GRAPH.addConnection(30, 288);
+        GRAPH.addConnection(30, 287);
+        GRAPH.addConnection(33, 224);
+        GRAPH.addConnection(34, 96);
+        GRAPH.addConnection(34, 312);
+        GRAPH.addConnection(34, 419);
+        GRAPH.addConnection(36, 131);
+        GRAPH.addConnection(36, 182);
+        GRAPH.addConnection(37, 58);
+        GRAPH.addConnection(37, 9);
+        GRAPH.addConnection(38, 109);
+        GRAPH.addConnection(38, 151);
+        GRAPH.addConnection(39, 90);
+        GRAPH.addConnection(40, 275);
+        GRAPH.addConnection(43, 237);
+        GRAPH.addConnection(45, 353);
+        GRAPH.addConnection(48, 222);
+        GRAPH.addConnection(26, 27);
+        GRAPH.addConnection(27, 26);
+        GRAPH.addConnection(27, 28);
+        GRAPH.addConnection(28, 27);
+        GRAPH.addConnection(28, 29);
+        GRAPH.addConnection(29, 28);
+        GRAPH.addConnection(29, 30);
+        GRAPH.addConnection(30, 29);
+        GRAPH.addConnection(30, 31);
+        GRAPH.addConnection(31, 30);
+        GRAPH.addConnection(31, 32);
+        GRAPH.addConnection(32, 31);
+        GRAPH.addConnection(32, 33);
+        GRAPH.addConnection(33, 32);
+        GRAPH.addConnection(33, 34);
+        GRAPH.addConnection(34, 33);
+        GRAPH.addConnection(34, 35);
+        GRAPH.addConnection(35, 34);
+        GRAPH.addConnection(35, 36);
+        GRAPH.addConnection(36, 35);
+        GRAPH.addConnection(36, 37);
+        GRAPH.addConnection(37, 36);
+        GRAPH.addConnection(37, 38);
+        GRAPH.addConnection(38, 37);
+        GRAPH.addConnection(38, 39);
+        GRAPH.addConnection(39, 38);
+        GRAPH.addConnection(39, 40);
+        GRAPH.addConnection(40, 39);
+        GRAPH.addConnection(40, 41);
+        GRAPH.addConnection(41, 40);
+        GRAPH.addConnection(41, 42);
+        GRAPH.addConnection(42, 41);
+        GRAPH.addConnection(42, 43);
+        GRAPH.addConnection(43, 42);
+        GRAPH.addConnection(43, 44);
+        GRAPH.addConnection(44, 43);
+        GRAPH.addConnection(44, 45);
+        GRAPH.addConnection(45, 44);
+        GRAPH.addConnection(45, 46);
+        GRAPH.addConnection(46, 45);
+        GRAPH.addConnection(46, 47);
+        GRAPH.addConnection(47, 46);
+        GRAPH.addConnection(47, 48);
+        GRAPH.addConnection(48, 47);
+        GRAPH.addConnection(48, 49);
+        GRAPH.addConnection(49, 48);
+
+        //Connections Line 9
+        GRAPH.addConnection(175, 262);
+        GRAPH.addConnection(176, 374);
+        GRAPH.addConnection(176, 203);
+        GRAPH.addConnection(177, 310);
+        GRAPH.addConnection(178, 337);
+        GRAPH.addConnection(179, 225);
+        GRAPH.addConnection(179, 312);
+        GRAPH.addConnection(179, 420);
+        GRAPH.addConnection(180, 95);
+        GRAPH.addConnection(181, 210);
+        GRAPH.addConnection(182, 36);
+        GRAPH.addConnection(182, 131);
+        GRAPH.addConnection(183, 59);
+        GRAPH.addConnection(183, 10);
+        GRAPH.addConnection(183, 82);
+        GRAPH.addConnection(185, 89);
+        GRAPH.addConnection(187, 277);
+        GRAPH.addConnection(190, 239);
+        GRAPH.addConnection(196, 258);
+
+        //Line 3
+        GRAPH.addConnection(50, 51);
+        GRAPH.addConnection(51, 50);
+        GRAPH.addConnection(51, 52);
+        GRAPH.addConnection(52, 51);
+        GRAPH.addConnection(52, 53);
+        GRAPH.addConnection(53, 52);
+        GRAPH.addConnection(53, 54);
+        GRAPH.addConnection(54, 53);
+        GRAPH.addConnection(54, 55);
+        GRAPH.addConnection(55, 54);
+        GRAPH.addConnection(55, 56);
+        GRAPH.addConnection(56, 55);
+        GRAPH.addConnection(56, 57);
+        GRAPH.addConnection(57, 56);
+        GRAPH.addConnection(57, 58);
+        GRAPH.addConnection(58, 57);
+        GRAPH.addConnection(58, 59);
+        GRAPH.addConnection(59, 58);
+        GRAPH.addConnection(59, 60);
+        GRAPH.addConnection(60, 59);
+        GRAPH.addConnection(60, 61);
+        GRAPH.addConnection(61, 60);
+        GRAPH.addConnection(61, 62);
+        GRAPH.addConnection(62, 61);
+        GRAPH.addConnection(62, 63);
+        GRAPH.addConnection(63, 62);
+        GRAPH.addConnection(63, 64);
+        GRAPH.addConnection(64, 63);
+        GRAPH.addConnection(64, 65);
+        GRAPH.addConnection(65, 64);
+        GRAPH.addConnection(65, 66);
+        GRAPH.addConnection(66, 65);
+        GRAPH.addConnection(66, 67);
+        GRAPH.addConnection(67, 66);
+        GRAPH.addConnection(67, 68);
+        GRAPH.addConnection(68, 67);
+        GRAPH.addConnection(68, 69);
+        GRAPH.addConnection(69, 68);
+        GRAPH.addConnection(69, 70);
+        GRAPH.addConnection(70, 69);
+        GRAPH.addConnection(70, 71);
+        GRAPH.addConnection(71, 70);
+
+
+        //Line 4
+        GRAPH.addConnection(72, 73);
+        GRAPH.addConnection(73, 72);
+        GRAPH.addConnection(73, 74);
+        GRAPH.addConnection(74, 73);
+        GRAPH.addConnection(74, 75);
+        GRAPH.addConnection(75, 74);
+        GRAPH.addConnection(75, 76);
+        GRAPH.addConnection(76, 75);
+        GRAPH.addConnection(76, 77);
+        GRAPH.addConnection(77, 76);
+        GRAPH.addConnection(77, 78);
+        GRAPH.addConnection(78, 77);
+        GRAPH.addConnection(78, 79);
+        GRAPH.addConnection(79, 78);
+        GRAPH.addConnection(79, 80);
+        GRAPH.addConnection(80, 79);
+        GRAPH.addConnection(80, 81);
+        GRAPH.addConnection(81, 80);
+        GRAPH.addConnection(81, 82);
+        GRAPH.addConnection(82, 81);
+        GRAPH.addConnection(83, 84);
+        GRAPH.addConnection(84, 83);
+        GRAPH.addConnection(84, 85);
+        GRAPH.addConnection(85, 84);
+
+        //Line 5
+        GRAPH.addConnection(86, 87);
+        GRAPH.addConnection(87, 86);
+        GRAPH.addConnection(87, 88);
+        GRAPH.addConnection(88, 87);
+        GRAPH.addConnection(88, 89);
+        GRAPH.addConnection(89, 88);
+        GRAPH.addConnection(89, 90);
+        GRAPH.addConnection(90, 89);
+        GRAPH.addConnection(90, 91);
+        GRAPH.addConnection(91, 90);
+        GRAPH.addConnection(91, 92);
+        GRAPH.addConnection(92, 91);
+        GRAPH.addConnection(92, 93);
+        GRAPH.addConnection(93, 92);
+        GRAPH.addConnection(93, 94);
+        GRAPH.addConnection(94, 93);
+        GRAPH.addConnection(94, 95);
+        GRAPH.addConnection(95, 94);
+        GRAPH.addConnection(95, 96);
+        GRAPH.addConnection(96, 95);
+        GRAPH.addConnection(96, 97);
+        GRAPH.addConnection(97, 96);
+
         // Пересадки Line 6
         GRAPH.addConnection(101, 263);
         GRAPH.addConnection(104, 227);
@@ -837,14 +1091,6 @@ public class MoscowMetro {
         }
         return null; // Если станция не найдена
     }
-
-//    public List<String> mapPathIntsToPathNames(List<Integer> path) {
-//        List<String> pathWithNames = new ArrayList<>();
-//        for (Integer stationId : path) {
-//            pathWithNames.add(STATIONS.get(stationId).getName());
-//        }
-//        return pathWithNames;
-//    }
 
     public String createStationsPathStringWithTransfers(List<Integer> stationIds) {
         if (stationIds == null || stationIds.isEmpty()) {
