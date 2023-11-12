@@ -6,6 +6,7 @@ import java.util.Map;
 public class MoscowMetro {
 
     private static final Map<Integer, MetroStation> STATIONS;
+    public static final MetroGraph GRAPH;
 
     static {
         STATIONS = new HashMap<>();
@@ -168,27 +169,22 @@ public class MoscowMetro {
         STATIONS.put(149, new MetroStation("8", "Площадь Ильича"));
         STATIONS.put(150, new MetroStation("8", "Марксистская"));
         STATIONS.put(151, new MetroStation("8", "Третьяковская"));
-        STATIONS.put(152, new MetroStation("8", "Деловой центр"));
-        STATIONS.put(153, new MetroStation("8", "Парк Победы"));
-        STATIONS.put(154, new MetroStation("8", "Минская"));
-        STATIONS.put(155, new MetroStation("8", "Ломоносовский проспект"));
-        STATIONS.put(156, new MetroStation("8", "Раменки"));
-        STATIONS.put(157, new MetroStation("8", "Мичуринский проспект"));
-        STATIONS.put(158, new MetroStation("8", "Озёрная"));
-        STATIONS.put(159, new MetroStation("8", "Говорово"));
-        STATIONS.put(160, new MetroStation("8", "Солнцево"));
-        STATIONS.put(161, new MetroStation("8", "Боровское шоссе"));
-        STATIONS.put(162, new MetroStation("8", "Новопеределкино"));
-        STATIONS.put(163, new MetroStation("8", "Рассказовка"));
 
-        STATIONS.put(164, new MetroStation("8A", "Деловой центр"));
-        STATIONS.put(165, new MetroStation("8A", "Шелепиха"));
-        STATIONS.put(166, new MetroStation("8A", "Хорошёвская"));
-        STATIONS.put(167, new MetroStation("8A", "ЦСКА"));
-        STATIONS.put(168, new MetroStation("8A", "Петровский парк"));
-        STATIONS.put(169, new MetroStation("8A", "Динамо"));
-        STATIONS.put(170, new MetroStation("8A", "Краснопресненская"));
-        STATIONS.put(171, new MetroStation("8A", "Белорусская"));
+        STATIONS.put(152, new MetroStation("8А", "Деловой центр"));
+        STATIONS.put(153, new MetroStation("8А", "Парк Победы"));
+        STATIONS.put(154, new MetroStation("8А", "Минская"));
+        STATIONS.put(155, new MetroStation("8А", "Ломоносовский проспект"));
+        STATIONS.put(156, new MetroStation("8А", "Раменки"));
+        STATIONS.put(157, new MetroStation("8А", "Мичуринский проспект"));
+        STATIONS.put(158, new MetroStation("8А", "Озёрная"));
+        STATIONS.put(159, new MetroStation("8А", "Говорово"));
+        STATIONS.put(160, new MetroStation("8А", "Солнцево"));
+        STATIONS.put(161, new MetroStation("8А", "Боровское шоссе"));
+        STATIONS.put(162, new MetroStation("8А", "Новопеределкино"));
+        STATIONS.put(163, new MetroStation("8А", "Рассказовка"));
+        STATIONS.put(164, new MetroStation("8А", "Пыхтино"));
+        STATIONS.put(165, new MetroStation("8А", "Аэропорт Внуково"));
+
 
         STATIONS.put(172, new MetroStation("9", "Алтуфьево"));
         STATIONS.put(173, new MetroStation("9", "Бибирево"));
@@ -272,6 +268,7 @@ public class MoscowMetro {
         STATIONS.put(249, new MetroStation("11", "Мневники"));
         STATIONS.put(250, new MetroStation("11", "Народное ополчение"));
 
+        STATIONS.put(435, new MetroStation("11А", "ЦСКА"));
         STATIONS.put(251, new MetroStation("11А", "Хорошевская"));
         STATIONS.put(252, new MetroStation("11А", "Шелепиха"));
         STATIONS.put(253, new MetroStation("11А", "Деловой центр"));
@@ -292,6 +289,7 @@ public class MoscowMetro {
         STATIONS.put(266, new MetroStation("14", "Бульвар Рокоссовского"));
         STATIONS.put(267, new MetroStation("14", "Локомотив"));
         STATIONS.put(268, new MetroStation("14", "Измайлово"));
+        STATIONS.put(436, new MetroStation("14", "Шоссе-Энтузиастов"));
         STATIONS.put(269, new MetroStation("14", "Соколиная гора"));
         STATIONS.put(270, new MetroStation("14", "Андроновка"));
         STATIONS.put(271, new MetroStation("14", "Щербинка"));
@@ -463,6 +461,148 @@ public class MoscowMetro {
         STATIONS.put(432, new MetroStation("D4", "Кучино"));
         STATIONS.put(433, new MetroStation("D4", "Ольгино"));
         STATIONS.put(434, new MetroStation("D4", "Железнодорожная"));
+
+        GRAPH = new MetroGraph();
+        // Пересадки Line 6
+        GRAPH.addConnection(101, 263); // Для "Ботанический сад" на 6-й и 14-й линиях
+        GRAPH.addConnection(104, 227); // Связь между Рижская (6 линия) и Рижская (11 линия)
+        GRAPH.addConnection(104, 339); // Связь между Рижская (6 линия) и Рижская (D2)
+        GRAPH.addConnection(227, 339); // Связь между Рижская (11 линия) и Рижская (D2)
+        GRAPH.addConnection(94, 105); // Связь между Проспект Мира (5 линия) и Проспект Мира (6 линия)
+        GRAPH.addConnection(209, 107); // Связь между Сретенский бульвар и Тургеневская
+        GRAPH.addConnection(209, 7);   // Связь между Сретенский бульвар и Чистые пруды
+        GRAPH.addConnection(107, 7);   // Связь между Тургеневская и Чистые пруды
+        GRAPH.addConnection(108, 133); // Связь между Китай-город (6 линия) и Китай-город (7 линия)
+        GRAPH.addConnection(109, 151); // Связь между Третьяковская (6 линия) и Третьяковская (8 линия)
+        GRAPH.addConnection(109, 38);  // Связь между Третьяковская (6 линия) и Новокузнецкая (2 линия)
+        GRAPH.addConnection(151, 38);  // Связь между Третьяковская (8 линия) и Новокузнецкая (2 линия)
+        GRAPH.addConnection(110, 88); // Связь между Октябрьская (6 линия) и Октябрьская (5 линия)
+        GRAPH.addConnection(112, 279); // Связь между Ленинский проспект (6 линия) и Площадь Гагарина (14 линия)
+        GRAPH.addConnection(116, 241); // Связь между Калужская (6 линия) и Воронцовская (11 линия)
+        GRAPH.addConnection(121, 260); // Связь между Новоясеневская (6 линия) и Битцевский парк (12 линия)
+        // Пересадки Line 7
+        GRAPH.addConnection(124, 332); // Связь между Тушинская (7 линия) и Тушинская (D2)
+        GRAPH.addConnection(125, 333); // Связь между Щукинская (7 линия) и Щукинская (D2)
+        GRAPH.addConnection(126, 285); // Связь между Октябрьское поле (7 линия) и Зорге (14 линия)
+        GRAPH.addConnection(126, 286); // Связь между Октябрьское поле (7 линия) и Панфиловская (14 линия)
+        GRAPH.addConnection(285, 286); // Связь между Зорге (14 линия) и Панфиловская (14 линия)
+        GRAPH.addConnection(127, 284); // Связь между Полежаевская (7 линия) и Хорошево (14 линия)
+        GRAPH.addConnection(127, 223); // Связь между Полежаевская (7 линия) и Хорошевская (11 линия)
+        GRAPH.addConnection(127, 251); // Связь между Полежаевская (7 линия) и Хорошевская (11А линия)
+        GRAPH.addConnection(284, 223); // Связь между Хорошево (14 линия) и Хорошевская (11 линия)
+        GRAPH.addConnection(284, 251); // Связь между Хорошево (14 линия) и Хорошевская (11А линия)
+        GRAPH.addConnection(223, 251); // Связь между Хорошевская (11 линия) и Хорошевская (11А линия)
+        GRAPH.addConnection(131, 36);
+        GRAPH.addConnection(131, 182);
+        GRAPH.addConnection(36, 182);
+        GRAPH.addConnection(132, 8);
+        GRAPH.addConnection(108, 133);
+        GRAPH.addConnection(134, 91);
+        GRAPH.addConnection(134, 150);
+        GRAPH.addConnection(91, 150);
+        GRAPH.addConnection(135, 212);
+        GRAPH.addConnection(136, 273);
+        GRAPH.addConnection(137, 345);
+        GRAPH.addConnection(137, 233);
+        GRAPH.addConnection(345, 233);
+        GRAPH.addConnection(139, 382);
+        GRAPH.addConnection(140, 383);
+        GRAPH.addConnection(141, 235);
+        GRAPH.addConnection(141, 384);
+        GRAPH.addConnection(235, 384);
+
+        // Связи Line 6
+        GRAPH.addConnection(98, 99);
+        GRAPH.addConnection(99, 98);
+        GRAPH.addConnection(99, 100);
+        GRAPH.addConnection(100, 99);
+        GRAPH.addConnection(100, 101);
+        GRAPH.addConnection(101, 100);
+        GRAPH.addConnection(101, 102);
+        GRAPH.addConnection(102, 101);
+        GRAPH.addConnection(102, 103);
+        GRAPH.addConnection(103, 102);
+        GRAPH.addConnection(103, 104);
+        GRAPH.addConnection(104, 103);
+        GRAPH.addConnection(104, 105);
+        GRAPH.addConnection(105, 104);
+        GRAPH.addConnection(105, 106);
+        GRAPH.addConnection(106, 105);
+        GRAPH.addConnection(106, 107);
+        GRAPH.addConnection(107, 106);
+        GRAPH.addConnection(107, 108);
+        GRAPH.addConnection(108, 107);
+        GRAPH.addConnection(108, 109);
+        GRAPH.addConnection(109, 108);
+        GRAPH.addConnection(109, 110);
+        GRAPH.addConnection(110, 109);
+        GRAPH.addConnection(110, 111);
+        GRAPH.addConnection(111, 110);
+        GRAPH.addConnection(111, 112);
+        GRAPH.addConnection(112, 111);
+        GRAPH.addConnection(112, 113);
+        GRAPH.addConnection(113, 112);
+        GRAPH.addConnection(113, 114);
+        GRAPH.addConnection(114, 113);
+        GRAPH.addConnection(114, 115);
+        GRAPH.addConnection(115, 114);
+        GRAPH.addConnection(115, 116);
+        GRAPH.addConnection(116, 115);
+        GRAPH.addConnection(116, 117);
+        GRAPH.addConnection(117, 116);
+        GRAPH.addConnection(117, 118);
+        GRAPH.addConnection(118, 117);
+        GRAPH.addConnection(118, 119);
+        GRAPH.addConnection(119, 118);
+        GRAPH.addConnection(119, 120);
+        GRAPH.addConnection(120, 119);
+        GRAPH.addConnection(120, 121);
+        GRAPH.addConnection(121, 120);
+
+        // Связи Line 7
+        GRAPH.addConnection(122, 123);
+        GRAPH.addConnection(123, 122);
+        GRAPH.addConnection(123, 124);
+        GRAPH.addConnection(124, 123);
+        GRAPH.addConnection(124, 125);
+        GRAPH.addConnection(125, 124);
+        GRAPH.addConnection(125, 126);
+        GRAPH.addConnection(126, 125);
+        GRAPH.addConnection(126, 127);
+        GRAPH.addConnection(127, 126);
+        GRAPH.addConnection(127, 128);
+        GRAPH.addConnection(128, 127);
+        GRAPH.addConnection(128, 129);
+        GRAPH.addConnection(129, 128);
+        GRAPH.addConnection(129, 130);
+        GRAPH.addConnection(130, 129);
+        GRAPH.addConnection(130, 131);
+        GRAPH.addConnection(131, 130);
+        GRAPH.addConnection(131, 132);
+        GRAPH.addConnection(132, 131);
+        GRAPH.addConnection(132, 133);
+        GRAPH.addConnection(133, 132);
+        GRAPH.addConnection(133, 134);
+        GRAPH.addConnection(134, 133);
+        GRAPH.addConnection(134, 135);
+        GRAPH.addConnection(135, 134);
+        GRAPH.addConnection(135, 136);
+        GRAPH.addConnection(136, 135);
+        GRAPH.addConnection(136, 137);
+        GRAPH.addConnection(137, 136);
+        GRAPH.addConnection(137, 138);
+        GRAPH.addConnection(138, 137);
+        GRAPH.addConnection(138, 139);
+        GRAPH.addConnection(139, 138);
+        GRAPH.addConnection(139, 140);
+        GRAPH.addConnection(140, 139);
+        GRAPH.addConnection(140, 141);
+        GRAPH.addConnection(141, 140);
+        GRAPH.addConnection(141, 142);
+        GRAPH.addConnection(142, 141);
+        GRAPH.addConnection(142, 143);
+        GRAPH.addConnection(143, 142);
+
     }
 
 }
