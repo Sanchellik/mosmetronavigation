@@ -292,7 +292,6 @@ public class MoscowMetro {
         STATIONS.put(436, new MetroStation("14", "Шоссе-Энтузиастов"));
         STATIONS.put(269, new MetroStation("14", "Соколиная гора"));
         STATIONS.put(270, new MetroStation("14", "Андроновка"));
-        STATIONS.put(271, new MetroStation("14", "Щербинка"));
         STATIONS.put(272, new MetroStation("14", "Новохохловская"));
         STATIONS.put(273, new MetroStation("14", "Угрешская"));
         STATIONS.put(274, new MetroStation("14", "Дубровка"));
@@ -602,6 +601,87 @@ public class MoscowMetro {
         GRAPH.addConnection(142, 141);
         GRAPH.addConnection(142, 143);
         GRAPH.addConnection(143, 142);
+
+        // Пересадки D1
+        GRAPH.addConnection(306, 198);
+        GRAPH.addConnection(309, 261);
+        GRAPH.addConnection(309, 202);
+        GRAPH.addConnection(261, 202);
+        GRAPH.addConnection(310, 177);
+        GRAPH.addConnection(311, 420);
+        GRAPH.addConnection(311, 225);
+        GRAPH.addConnection(311, 179);
+        GRAPH.addConnection(420, 225);
+        GRAPH.addConnection(420, 179);
+        GRAPH.addConnection(225, 179);
+        GRAPH.addConnection(312, 419);
+        GRAPH.addConnection(312, 96);
+        GRAPH.addConnection(312, 34);
+        GRAPH.addConnection(419, 96);
+        GRAPH.addConnection(419, 34);
+        GRAPH.addConnection(96, 34);
+        GRAPH.addConnection(313, 128);
+        GRAPH.addConnection(314, 283);
+        GRAPH.addConnection(314, 253);
+        GRAPH.addConnection(283, 253);
+        GRAPH.addConnection(315, 76);
+        GRAPH.addConnection(316, 63);
+        GRAPH.addConnection(317, 247);
+        GRAPH.addConnection(317, 64);
+        GRAPH.addConnection(317, 73);
+        GRAPH.addConnection(247, 64);
+        GRAPH.addConnection(247, 73);
+        GRAPH.addConnection(64, 73);
+
+        // Связи D1
+        GRAPH.addConnection(299, 300);
+        GRAPH.addConnection(300, 299);
+        GRAPH.addConnection(300, 301);
+        GRAPH.addConnection(301, 300);
+        GRAPH.addConnection(301, 302);
+        GRAPH.addConnection(302, 301);
+        GRAPH.addConnection(302, 303);
+        GRAPH.addConnection(303, 302);
+        GRAPH.addConnection(303, 304);
+        GRAPH.addConnection(304, 303);
+        GRAPH.addConnection(304, 305);
+        GRAPH.addConnection(305, 304);
+        GRAPH.addConnection(305, 306);
+        GRAPH.addConnection(306, 305);
+        GRAPH.addConnection(306, 307);
+        GRAPH.addConnection(307, 306);
+        GRAPH.addConnection(307, 308);
+        GRAPH.addConnection(308, 307);
+        GRAPH.addConnection(308, 309);
+        GRAPH.addConnection(309, 308);
+        GRAPH.addConnection(309, 310);
+        GRAPH.addConnection(310, 309);
+        GRAPH.addConnection(310, 311);
+        GRAPH.addConnection(311, 310);
+        GRAPH.addConnection(311, 312);
+        GRAPH.addConnection(312, 311);
+        GRAPH.addConnection(312, 313);
+        GRAPH.addConnection(313, 312);
+        GRAPH.addConnection(313, 314);
+        GRAPH.addConnection(314, 313);
+        GRAPH.addConnection(314, 315);
+        GRAPH.addConnection(315, 314);
+        GRAPH.addConnection(315, 316);
+        GRAPH.addConnection(316, 315);
+        GRAPH.addConnection(316, 317);
+        GRAPH.addConnection(317, 316);
+        GRAPH.addConnection(317, 318);
+        GRAPH.addConnection(318, 317);
+        GRAPH.addConnection(318, 319);
+        GRAPH.addConnection(319, 318);
+        GRAPH.addConnection(319, 320);
+        GRAPH.addConnection(320, 319);
+        GRAPH.addConnection(320, 321);
+        GRAPH.addConnection(321, 320);
+        GRAPH.addConnection(321, 322);
+        GRAPH.addConnection(322, 321);
+        GRAPH.addConnection(322, 323);
+        GRAPH.addConnection(323, 322);
 
     }
 
